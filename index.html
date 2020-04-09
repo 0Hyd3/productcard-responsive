@@ -1,0 +1,114 @@
+<html>
+  <style>
+    		@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+        		@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap');
+  body{
+    	  font-family: 'Montserrat', sans-serif;
+      background: #E3E3D8;
+  font-family: sans-serif;
+  padding: 25px;
+  }
+  .titu{
+  font-size: 30px;
+      font-family: 'Big Shoulders Display', cursive;
+      margin-top: 3px;
+       margin-bottom: 5px;
+  }
+  .centeri{ 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  }
+  .card {
+    	   transition: transform .7s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background: white;
+    width: 300px;
+  height: 485px;
+}
+.card:hover{
+
+   transform: scale(1.04)
+}
+.preco{
+  	  font-family: 'Montserrat', sans-serif;
+  float: right;
+  color: #cc0000;
+  font-size: 14px;
+panding: 50px;
+  margin-right: 18px;
+}
+.button {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #ff2e2e;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 1s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.footer {
+    font-family: 'Montserrat', sans-serif;
+  background-color: #f1f1f1;
+  padding: 10px;
+    border-radius: 10px;
+  text-align: center;
+}
+  </style>
+<head>
+<title></title>
+</head>
+<body>
+<div class="centeri">
+<div class="card">
+    <p class="preco"> R$ 99.99</p>
+  <img src="https://authenticfeet.vteximg.com.br/arquivos/ids/227026-1000-1000/Camiseta-Nike-Swoosh-1-Masculina-Vermelho.jpg" class="foto" style="width:100%">
+  <p class="titu">Nike T-Shirt</p>
+  <center>
+  <button class="button"><span>Buy  </span></button>
+  </center>
+  </div>
+  
+</div>
+<div class="footer">
+  <p>Created By 0Hyd3</p>
+</div>
+</body>
+
+</html>
