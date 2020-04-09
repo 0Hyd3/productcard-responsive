@@ -21,6 +21,10 @@
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   }
+  span{
+    
+    position: relative;
+  }
   .card {
     	   transition: transform .7s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -36,14 +40,7 @@ border-radius: 10px;
 
    transform: scale(1.04)
 }
-.preco{
-  	  font-family: 'Montserrat', sans-serif;
-  float: right;
-  color: #cc0000;
-  font-size: 14px;
-panding: 50px;
-  margin-right: 18px;
-}
+
 .button {
   border-radius: 10px;
   margin-bottom: 10px;
@@ -67,21 +64,21 @@ panding: 50px;
 }
 
 .button span:after {
-  content: '\00bb';
+  content: '+';
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
+  left: +20px;
   transition: 0.5s;
 }
 
 .button:hover span {
-  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .button:hover span:after {
   opacity: 1;
-  right: 0;
+  left: 0;
 }
 .footer {
     font-family: 'Montserrat', sans-serif;
@@ -90,8 +87,38 @@ panding: 50px;
     border-radius: 10px;
   text-align: center;
 }
+img{
+  border-radius: 50px;
+  opacity:0.9;
+  transition: 0.5s;
+}
+img, #parent {
+    cursor: pointer;
+    
+}
+.card:hover > img{
+    opacity:1;
+}
+.preco{
+    transition: 0.5s;
+  	  font-family: 'Montserrat', sans-serif;
+  float: right;
+  color: #cc0000;
+  font-size: 14px;
+panding: 50px;
+  margin-right: 18px;
+}
+img:active{
+      border-radius: 100px;
+   top: 205px;
+     transform: scale(1.64)
+  
+}
+
+
   </style>
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title></title>
 </head>
 <body>
@@ -101,14 +128,11 @@ panding: 50px;
   <img src="https://authenticfeet.vteximg.com.br/arquivos/ids/227026-1000-1000/Camiseta-Nike-Swoosh-1-Masculina-Vermelho.jpg" class="foto" style="width:100%">
   <p class="titu">Nike T-Shirt</p>
   <center>
-  <button class="button"><span>Buy  </span></button>
+  <button class="button"><span><i class="fa fa-shopping-cart" style="font-size:24px"></i></span></button>
   </center>
   </div>
   
-</div>
-<div class="footer">
-  <p>Created By 0Hyd3</p>
-</div>
+
 </body>
 
 </html>
